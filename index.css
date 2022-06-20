@@ -1,106 +1,38 @@
-body, html{
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-   background-image: url('./images/time-background-concept-vintage-classic-alarm-clock-yellow-empty-management-comcept-174343445.jpg')
-  }
-  
-  header h1{
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/time-background-concept-vintage-classic-alarm-clock-yellow-empty-management-comcept-174343445.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 44%;
+    margin: 2rem auto;
     text-align: center;
-    color: white;
-    background-color: #32690d;
-    margin: 0;
-    font-weight: 100;
-    padding: 30px;
-  
-  }
-  
-  form{
-    color: white;
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  #hours-min label{
-    padding: 30px;
-    display: inline-block;
-    color: white;
-    font-size: 25px;
-    font-weight: 100;
-   
-  }
-  
-  #hours-min{
+    background: #f8f403;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+main label, main input {
     display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: green;
-    padding: 30px;
-    
-   
-    
-  }
-  
-  #hours-min input{
-    background-color: #1ddf98;
-    color: orange;
-    height: 20px;
-    margin-left: 50px;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    border-radius: 10px;
-    font-size: 28px;
-    font-weight: 400;
-    width: 90px;
-    padding: 20px;
-    
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    
-  }
-  
-  #hours-min input[type=number]:focus {
-    border: 3px solid orange;
-  }
-  
-  
-  /* Hides input number arrows */
-  /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
-  /* Firefox */
-  input[type=number] {
-    -moz-appearance:textfield;
-  }
-  
-  #submit{
-    height: 60px;
-    font-size: 30px;
-    width: 200px;
-    height: 80px;
-    margin-top: 25px;
-    background-color: #15b344;
+}
+
+main input {
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#daysBtn, #hoursBtn, #minutesBtn, #secondsBtn {
+    background: gray;
+    width: 18%;
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 4px 9px;
+    text-transform: uppercase;
+    font-weight: bold;
     color: white;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: 0.2s;
-  
-  }
-  
-  #submit:hover{
-    background-color: #d97c25;
-  }
-  
-  #calculate{
-    font-size: 35px;
-    color: white;
-    font-weight: 400;
-  
-  }
+}
